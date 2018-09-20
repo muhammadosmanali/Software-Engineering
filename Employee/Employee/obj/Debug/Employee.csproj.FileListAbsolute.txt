@@ -1,0 +1,14 @@
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\bin\Debug\Employee.exe.config
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\bin\Debug\Employee.exe
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\bin\Debug\Employee.pdb
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.csprojResolveAssemblyReference.cache
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.Form1.resources
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.Properties.Resources.resources
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.csproj.GenerateResource.Cache
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.exe
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.pdb
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.ShortAttEmployee.resources
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.Attendencess.resources
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.AddEmployee.resources
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.CheckAttenOfEmployee.resources
+D:\University\Semester 5\SE\SE Assignments\Employee\Employee\obj\Debug\Employee.TotalServices.resources
