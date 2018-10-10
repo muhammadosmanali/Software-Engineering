@@ -1,0 +1,49 @@
+﻿@model Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detail of @(Html.DisplayFor(modelItem => modelItem.FirstName) + " " + Html.DisplayFor(modelItem => modelItem.MiddleName) + " " + Html.DisplayFor(modelItem => modelItem.LastName))</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+    <ul>
+        <li>
+            Name: @(Html.DisplayFor(modelItem => modelItem.FirstName) + " " + Html.DisplayFor(modelItem => modelItem.MiddleName) + " " + Html.DisplayFor(modelItem => modelItem.LastName))
+        </li>
+        <li>
+            Date Of Birth: @Html.DisplayFor(modelItem => modelItem.DateOfBirth)
+        </li>
+        <li>
+            Home Address: @Html.DisplayFor(modelItem => modelItem.HomeAddress)
+        </li>
+        <li>
+            Home City: @Html.DisplayFor(modelItem => modelItem.HomeCity)
+        </li>
+        <li>
+            Email ID: @Html.DisplayFor(modelItem => modelItem.EmailId)
+        </li>
+        <li>
+            Facebool Account: @Html.DisplayFor(modelItem => modelItem.FaceBookAccountId)
+        </li>
+        <li>
+            Twitter Account: @Html.DisplayFor(modelItem => modelItem.TwitterId)
+        </li>
+        <li>
+            LinkedIn Account: @Html.DisplayFor(modelItem => modelItem.LinkedInId)
+        </li>
+        
+    </ul>
+    
+
+
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

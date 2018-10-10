@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Person>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Of Contacts</h2>
+
+<ul class="nav navbar-nav navbar-left">
+    <li>@Html.ActionLink("Create New", "Create", new { area = "" }, new { @class = "navbar-brand" })</li>
+</ul>
+<br />
+<br />
+<br />
+<table class="table">
+    <tr>
+        @if (!Model.Any())
+        {
+            <th>No Person Added</th>
+        }
+        else
+        {
+            <th>
+                Name
+            </th>
+            <th>Contact Number / Edit Contacts</th>
+            <th>Actions</th>
+        }
+    </tr>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @(Html.DisplayFor(modelItem => item.FirstName) + " " + Html.DisplayFor(modelItem => item.MiddleName) + " " + Html.DisplayFor(modelItem => item.LastName))
+        </td>
+        <td>
+            @foreach (var contact in item.Contacts)
+            {
+                if (contact == null)
+                {
+                    <p>No Contact</p>
+                }
+                else
+                {
+                    
+                    @Html.ActionLink((Html.DisplayFor(modelItem => contact.Type) + ": " + Html.DisplayFor(modelItem => contact.ContactNumber)), "EditContact", new {id = contact.ContactId})
+                }
+                <br/>
+                
+            }
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit Person", "Edit", new {id = item.PersonId}) |
+            @Html.ActionLink("Person Details", "Details", new {id = item.PersonId }) |
+            @Html.ActionLink("Add Contact", "CreateContact", new { id = item.PersonId }) |
+            @Html.ActionLink("Delete Person", "Delete", new { id = item.PersonId })
+            
+        </td>
+    </tr>
+    }
+
+</table>
